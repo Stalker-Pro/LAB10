@@ -6,6 +6,9 @@ const swichRD = document.querySelector('.rabbDoveSwitch');
 const cord = document.querySelector('.cord');
 const point = document.querySelector('.point'); 
 
+const wizard = document.querySelector('.wizard');
+const hatContains = document.querySelector('.hat-contains');
+
 let checkTurnOn = false;
 let moveChange = '';
 
@@ -25,14 +28,21 @@ lampOff.addEventListener('click', (event) => {
     point.style.top = '180%';
     setTimeout(()=>{
       lamp.classList.add('light-on');
+      wizard.style.opacity = '1';
+      hatContains.style.visibility = 'visible';
+      hatContains.style.opacity = '1';
     },150)
-
+    
     checkTurnOn = true;
   } else{
     cord.style.height = '100%';
     point.style.top = '100%';
+
     setTimeout(()=>{
       lamp.classList.remove('light-on');
+      wizard.style.opacity = '0';
+      hatContains.style.visibility = 'hidden';
+      hatContains.style.opacity = '0';
     },150)
 
     checkTurnOn = false;

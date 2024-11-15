@@ -128,6 +128,8 @@ body{
   left: 40%;
   transform: translate(-50%, -50%); 
 
+  opacity: 0;
+
   width: 240px; 
   height: auto; 
 
@@ -139,6 +141,9 @@ body{
   left: 55%;
   width: 120px;
   aspect-ratio: 1;
+
+  opacity: 0;
+  visibility:hidden;
 }
 
 .hat-image{
