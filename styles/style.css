@@ -39,11 +39,11 @@ body{
 }
 
 .scene-image-up{
-  transform: translateY(-800px);
+  transform: translateY(-1500px);
 }
 
 .scene-image-up:hover{
-  transform: translateY(-800px);
+  transform: translateY(-1500px);
   transition: 2.2s;
 }
 
