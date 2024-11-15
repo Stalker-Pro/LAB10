@@ -89,7 +89,7 @@ body{
   left: 1.8px;
   height: 100%; /*Связаны блин 2*/
   width: 2px;
-  background-color: grey;transition: 2s;
+  background-color: grey;transition: .3s;
 }
 
 .point{
@@ -98,7 +98,7 @@ body{
   aspect-ratio: 1;
   border-radius: 50px;
   top: 100%; /*Связаны блин 2*/
-  background-color: yellow;  transition: 2s;
+  background-color: yellow;  transition: .3s;
 }
 
 .light {

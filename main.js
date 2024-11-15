@@ -6,7 +6,7 @@ const swichRD = document.querySelector('.rabbDoveSwitch');
 const cord = document.querySelector('.cord');
 const point = document.querySelector('.point'); 
 
-let checkTurnOn = true;
+let checkTurnOn = false;
 let moveChange = '';
 
 
@@ -19,13 +19,13 @@ document.addEventListener('click', (event) =>{
 
 lampOff.addEventListener('click', (event) => {
   const lamp = document.querySelector('.light');
-
+  
   if(!checkTurnOn){
     cord.style.height = '180%';
     point.style.top = '180%';
     setTimeout(()=>{
       lamp.classList.add('light-on');
-    },1300)
+    },150)
 
     checkTurnOn = true;
   } else{
@@ -33,10 +33,10 @@ lampOff.addEventListener('click', (event) => {
     point.style.top = '100%';
     setTimeout(()=>{
       lamp.classList.remove('light-on');
-    },1300)
+    },150)
 
     checkTurnOn = false;
-  }
+  } 
 
 
 })
